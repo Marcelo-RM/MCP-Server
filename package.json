@@ -1,0 +1,20 @@
+{
+	"name": "mcp_server",
+	"version": "1.0.0",
+	"description": "A CMP server that provides documentation for Node.js core modules API",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js --debug",
+		"debug": "npx @modelcontextprotocol/inspector node index.js --debug"
+	},
+	"author": "Marcelo Montalvão",
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.11.0",
+		"pino": "^9.6.0",
+		"zod": "^3.24.4"
+	},
+	"devDependencies": {
+		"@modelcontextprotocol/inspector": "^0.19.0"
+	}
+}
